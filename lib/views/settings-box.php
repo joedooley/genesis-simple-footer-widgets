@@ -6,3 +6,4 @@
 		<?php endfor; ?>
 	</select>
 </p>
+<em>Select how many footer widgets you want. <a href="/wp-admin/widgets.php" title="Go to Widgets" target="blank">Go to Widgets.</a></em>

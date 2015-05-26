@@ -4,7 +4,7 @@ Donate link: http://wpdevelopersclub.com/
 Tags: genesis, genesiswp, widgets, footer widgets
 Requires at least: 3.5
 Tested up to: 4.2.2
-Stable tag: 0.1
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,21 +31,17 @@ Genesis Variable Footer Widgets allows you to easily go from no footer widgets t
 == FTP Installation =
 
 1. Upload the entire `genesis-variable-footer-widgets` folder to the `/wp-content/plugins/` directory
-1. DO NOT change the name of the `genesis-variable-footer-widgets` folder
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Navigate to the `Genesis > Theme Settings` menu
-1. Locate the Footer Widgets dropdown menu and choose how many widgets you want.
-1. Go to Appearance > Widgets and add content to your new widget areas.
+2. DO NOT change the name of the `genesis-variable-footer-widgets` folder
+3. Activate the plugin through the 'Plugins' menu in WordPress
 
 = Once Activated =
+
+1. Navigate to the `Genesis > Theme Settings` menu
+2. Locate the Footer Widgets dropdown menu and choose how many widgets you want.
+3. Go to Appearance > Widgets and add content to your new widget areas.
 
 == Frequently Asked Questions ==
 
 = Can I assign widget areas to locations other than the footer? 
 
 	Not right now.
-
-== Changelog ==
-
-= 0.1 =
-* Initial Alpha Release
