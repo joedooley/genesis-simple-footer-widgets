@@ -4,7 +4,7 @@
  * Genesis Variable Footer Widgets
  *
  * @package     JD_Genesis_Variable_Footer_Widgets
- * @since       1.0.0
+ * @since       1.0.1
  * @author      Joe Dooley
  * @link        http://www.developingdesigns.com/author/joe-dooley/
  * @license     GNU General Public License 2.0+
@@ -32,7 +32,7 @@ class Genesis_Variable_Footer_Widgets {
 	 *
 	 * @var string
 	 */
-	const VERSION = '1.0';
+	const VERSION = '1.0.1';
 
 	/**
 	 * The plugin's minimum WordPress requirement
@@ -88,7 +88,7 @@ class Genesis_Variable_Footer_Widgets {
 	/**
 	 * Instantiate the plugin
 	 *
-	 * @since 1.0.0
+	 * @since 1.0.1
 	 *
 	 * @param array     $config         Configuration parameters
 	 * @param string    $plugin_dir     Plugin dir
@@ -103,7 +103,7 @@ class Genesis_Variable_Footer_Widgets {
 	/**
 	 * Initialize the plugin's properties
 	 *
-	 * @since 1.0.0
+	 * @since 1.0.1
 	 *
 	 * @param array     $config         Configuration parameters
 	 * @param string    $plugin_dir     Plugin dir
@@ -126,7 +126,7 @@ class Genesis_Variable_Footer_Widgets {
 	/**
 	 * Initialize hooks
 	 *
-	 * @since 1.0.0
+	 * @since 1.0.1
 	 *
 	 * @return null
 	 */
@@ -151,7 +151,7 @@ class Genesis_Variable_Footer_Widgets {
 	/**
 	 * Initialize the Metabox in the admin area
 	 *
-	 * @since 1.0.0
+	 * @since 1.0.1
 	 *
 	 * @return null
 	 */
@@ -167,7 +167,7 @@ class Genesis_Variable_Footer_Widgets {
 	 * Note: We hook into after_setup_theme before Genesis calls genesis_register_footer_widget_areas()
 	 * to ensure we are overriding the Child theme's setting for footer widgets
 	 *
-	 * @since 1.0.0
+	 * @since 1.0.1
 	 *
 	 * @return null
 	 */
@@ -178,7 +178,7 @@ class Genesis_Variable_Footer_Widgets {
 	/**
 	 * Register the styles
 	 *
-	 * @since 1.0.0
+	 * @since 1.0.1
 	 *
 	 * @return null
 	 */
@@ -204,7 +204,7 @@ class Genesis_Variable_Footer_Widgets {
 	/**
 	 * Add attributes
 	 *
-	 * @since 1.0.0
+	 * @since 1.0.1
 	 *
 	 * @param array     $attributes
 	 * @return array

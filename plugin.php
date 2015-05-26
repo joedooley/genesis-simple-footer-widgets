@@ -6,7 +6,7 @@
  * Description: Easily add up to 6 footer widgets in a simple drop-down menu.
  * Author:      Joe Dooley
  * Author URI:  http://www.developingdesigns.com/author/joe-dooley/
- * Version:     1.0
+ * Version:     1.0.1
  * Text Domain: genesis-variable-footer-widgets
  * Domain Path: languages
  *
@@ -25,7 +25,7 @@
  *
  * @package    JD_Genesis_Variable_Footer_Widgets
  * @author     Joe Dooley
- * @since      1.0.0
+ * @since      1.0.1
  * @license    GPL-2.0+
  */
 
@@ -40,7 +40,7 @@ add_action( 'genesis_setup', __NAMESPACE__ . '\\launch', 20 );
 /**
  * Launch this plugin once Genesis fires up
  *
- * @since 1.0.0
+ * @since 1.0.1
  *
  * @return null
  */
