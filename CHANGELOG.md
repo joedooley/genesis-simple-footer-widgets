@@ -1,3 +1,7 @@
+1.0.2
+
+Changed Plugin name to Genesis Simple Footer Widgets
+
 1.0.1
 
 Added CHANGELOG.md

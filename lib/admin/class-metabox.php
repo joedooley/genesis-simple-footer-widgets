@@ -1,10 +1,10 @@
-<?php namespace JD_Genesis_Variable_Footer_Widgets\Admin;
+<?php namespace JD_Genesis_Simple_Footer_Widgets\Admin;
 
 /**
- * Genesis Variable Footer Widgets
+ * Genesis Simple Footer Widgets
  *
- * @package     JD_Genesis_Variable_Footer_Widgets
- * @since       1.0.0
+ * @package     JD_Genesis_Simple_Footer_Widgets
+ * @since       1.0.2
  * @author      Joe Dooley
  * @link        http://www.developingdesigns.com/author/joe-dooley/
  * @license     GNU General Public License 2.0+
@@ -22,7 +22,7 @@ class Metabox {
 	/**
 	 * Instantiate the plugin
 	 *
-	 * @since 1.0.0
+	 * @since 1.0.2
 	 *
 	 * @param array     $config         Configuration parameters
 	 * @return self
@@ -35,7 +35,7 @@ class Metabox {
 	/**
 	 * Initialize the plugin's properties
 	 *
-	 * @since 1.0.0
+	 * @since 1.0.2
 	 *
 	 * @return null
 	 */
@@ -57,7 +57,7 @@ class Metabox {
 	 */
 	public function register_settings_box( $pagehook ) {
 		add_meta_box(
-			'jd-gvfw-settings',
+			'jd-gsfw-settings',
 			'Footer Widgets',
 			array( $this, 'render_metabox' ),
 			$pagehook,
@@ -69,7 +69,7 @@ class Metabox {
 	/**
 	 * Render the Metabox
 	 *
-	 * @since 1.0.0
+	 * @since 1.0.2
 	 *
 	 * @author Bill Erickson
 	 * @link http://www.billerickson.net/genesis-theme-options/

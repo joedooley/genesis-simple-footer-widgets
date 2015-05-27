@@ -1,10 +1,10 @@
-=== Genesis Variable Footer Widgets ===
+=== Genesis Simple Footer Widgets ===
 Contributors: devdesignstampa, hellofromTonya, cpaul007, WPDevelopersClub
 Donate link: http://wpdevelopersclub.com/
 Tags: genesis, genesiswp, widgets, footer widgets
 Requires at least: 3.5
 Tested up to: 4.2.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,22 +16,22 @@ This plugin allows you to create multiple footer widget's from a dropdown menu w
 
 Creating footer widgets can be a nuisance from project to project. Sometimes the original design calls for 4 footer widgets and by default Genesis only has the proper code for 3 footer widgets.
 
-Genesis Variable Footer Widgets allows you to easily go from no footer widgets to 6 footer widgets without having to worry about adding additional CSS or registering new widget areas.
+Genesis Simple Footer Widgets allows you to easily go from no footer widgets to 6 footer widgets without having to worry about adding additional CSS or registering new widget areas.  
 
 == Installation ==
 
 = From your WordPress dashboard =
 
 1. Visit 'Plugins > Add New'
-2. Search for 'Genesis Variable Footer Widgets'
-3. Activate Genesis Variable Footer Widgets from your Plugins page.
+2. Search for 'Genesis Simple Footer Widgets'
+3. Activate Genesis Simple Footer Widgets from your Plugins page.
 
 == Installation ==
 
 == FTP Installation =
 
-1. Upload the entire `genesis-variable-footer-widgets` folder to the `/wp-content/plugins/` directory
-2. DO NOT change the name of the `genesis-variable-footer-widgets` folder
+1. Upload the entire `genesis-Simple-footer-widgets` folder to the `/wp-content/plugins/` directory
+2. DO NOT change the name of the `genesis-Simple-footer-widgets` folder
 3. Activate the plugin through the 'Plugins' menu in WordPress
 
 = Once Activated =

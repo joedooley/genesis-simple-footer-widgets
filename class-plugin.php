@@ -1,10 +1,10 @@
-<?php namespace JD_Genesis_Variable_Footer_Widgets;
+<?php namespace JD_Genesis_Simple_Footer_Widgets;
 
 /**
- * Genesis Variable Footer Widgets
+ * Genesis Simple Footer Widgets
  *
- * @package     JD_Genesis_Variable_Footer_Widgets
- * @since       1.0.1
+ * @package     JD_Genesis_Simple_Footer_Widgets
+ * @since       1.0.2
  * @author      Joe Dooley
  * @link        http://www.developingdesigns.com/author/joe-dooley/
  * @license     GNU General Public License 2.0+
@@ -16,9 +16,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit( 'Cheatin&#8217; uh?' );
 }
 
-use JD_Genesis_Variable_Footer_Widgets\Admin\Metabox;
+use JD_Genesis_Simple_Footer_Widgets\Admin\Metabox;
 
-class Genesis_Variable_Footer_Widgets {
+class Genesis_Simple_Footer_Widgets {
 
 	/**
 	 * Number of footer widgets
@@ -32,7 +32,7 @@ class Genesis_Variable_Footer_Widgets {
 	 *
 	 * @var string
 	 */
-	const VERSION = '1.0.1';
+	const VERSION = '1.0.2';
 
 	/**
 	 * The plugin's minimum WordPress requirement
@@ -88,7 +88,7 @@ class Genesis_Variable_Footer_Widgets {
 	/**
 	 * Instantiate the plugin
 	 *
-	 * @since 1.0.1
+	 * @since 1.0.2
 	 *
 	 * @param array     $config         Configuration parameters
 	 * @param string    $plugin_dir     Plugin dir
@@ -103,7 +103,7 @@ class Genesis_Variable_Footer_Widgets {
 	/**
 	 * Initialize the plugin's properties
 	 *
-	 * @since 1.0.1
+	 * @since 1.0.2
 	 *
 	 * @param array     $config         Configuration parameters
 	 * @param string    $plugin_dir     Plugin dir
@@ -126,7 +126,7 @@ class Genesis_Variable_Footer_Widgets {
 	/**
 	 * Initialize hooks
 	 *
-	 * @since 1.0.1
+	 * @since 1.0.2
 	 *
 	 * @return null
 	 */
@@ -151,7 +151,7 @@ class Genesis_Variable_Footer_Widgets {
 	/**
 	 * Initialize the Metabox in the admin area
 	 *
-	 * @since 1.0.1
+	 * @since 1.0.2
 	 *
 	 * @return null
 	 */
@@ -167,7 +167,7 @@ class Genesis_Variable_Footer_Widgets {
 	 * Note: We hook into after_setup_theme before Genesis calls genesis_register_footer_widget_areas()
 	 * to ensure we are overriding the Child theme's setting for footer widgets
 	 *
-	 * @since 1.0.1
+	 * @since 1.0.2
 	 *
 	 * @return null
 	 */
@@ -178,12 +178,12 @@ class Genesis_Variable_Footer_Widgets {
 	/**
 	 * Register the styles
 	 *
-	 * @since 1.0.1
+	 * @since 1.0.2
 	 *
 	 * @return null
 	 */
 	public function enqueue() {
-		wp_enqueue_style( 'gvfw-stylesheet', $this->plugin_url . 'assets/css/style.css', false, self::VERSION );
+		wp_enqueue_style( 'gsfw-stylesheet', $this->plugin_url . 'assets/css/style.css', false, self::VERSION );
 	}
 
 	/**
@@ -204,13 +204,13 @@ class Genesis_Variable_Footer_Widgets {
 	/**
 	 * Add attributes
 	 *
-	 * @since 1.0.1
+	 * @since 1.0.2
 	 *
 	 * @param array     $attributes
 	 * @return array
 	 */
 	public function footer_widgets_attr( $attributes ) {
-		$attributes['class'] .= ' gvfw-footer-widgets-' . genesis_get_option('footer_widgets');
+		$attributes['class'] .= ' gsfw-footer-widgets-' . genesis_get_option('footer_widgets');
 
 		return $attributes;
 	}
