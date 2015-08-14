@@ -8,11 +8,11 @@ Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin allows you to create multiple footer widget's from a dropdown menu in Genesis Theme Settings. Plugin based on code from Genesis Developer, http://genesisdeveloper.me/controlling-footer-widget-columns-from-theme-settings-page-in-genesis/ .
+This plugin allows you to create multiple footer widgets from a dropdown menu in Genesis Theme Settings. Plugin based on code from Genesis Developer, http://genesisdeveloper.me/controlling-footer-widget-columns-from-theme-settings-page-in-genesis/ .
 
 == Description ==
 
-This plugin allows you to create multiple footer widget's from a dropdown menu within Genesis Theme Settings. Plugin based on code from Genesis Developer, http://genesisdeveloper.me/controlling-footer-widget-columns-from-theme-settings-page-in-genesis/ .
+This plugin allows you to create multiple footer widgets from a dropdown menu within Genesis Theme Settings. Plugin based on code from Genesis Developer, http://genesisdeveloper.me/controlling-footer-widget-columns-from-theme-settings-page-in-genesis/ .
 
 Creating footer widgets can be a nuisance from project to project. Sometimes the original design calls for 4 footer widgets and by default Genesis only has the proper code for 3 footer widgets.
 
