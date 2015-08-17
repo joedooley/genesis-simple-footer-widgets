@@ -8,11 +8,15 @@ Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
+<<<<<<< HEAD
 Create multiple footer widget's from a select menu in Genesis Theme Settings. From 0 to 6 widgets in seconds!
+=======
+This plugin allows you to create multiple footer widgets from a dropdown menu in Genesis Theme Settings. Plugin based on code from Genesis Developer, http://genesisdeveloper.me/controlling-footer-widget-columns-from-theme-settings-page-in-genesis/ .
+>>>>>>> 4d24994a32a4c85aacabadd87d7f8d679f089962
 
 == Description ==
 
-This plugin allows you to create multiple footer widget's from a dropdown menu within Genesis Theme Settings. Plugin based on code from Genesis Developer, http://genesisdeveloper.me/controlling-footer-widget-columns-from-theme-settings-page-in-genesis/ .
+This plugin allows you to create multiple footer widgets from a dropdown menu within Genesis Theme Settings. Plugin based on code from Genesis Developer, http://genesisdeveloper.me/controlling-footer-widget-columns-from-theme-settings-page-in-genesis/ .
 
 Creating footer widgets can be a nuisance from project to project. Sometimes the original design calls for 4 footer widgets and by default Genesis only has the proper code for 3 footer widgets.
 
@@ -44,6 +48,7 @@ Genesis Simple Footer Widgets allows you to easily go from no footer widgets to 
 = Can I assign widget areas to locations other than the footer? 
 
 	Not right now.
+<<<<<<< HEAD
 
 == Screenshots ==
 
@@ -83,3 +88,5 @@ If you do find any bugs please post them in the support forum.
 
 
 
+=======
+>>>>>>> 4d24994a32a4c85aacabadd87d7f8d679f089962
