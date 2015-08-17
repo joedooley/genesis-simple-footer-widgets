@@ -1,5 +1,5 @@
 === Genesis Simple Footer Widgets ===
-Contributors: devdesignstampa, hellofromTonya, cpaul007, WPDevelopersClub
+Contributors: devdesignstampa, hellofromTonya, cpaul007, pmgllc, WPDevelopersClub
 Donate link: http://wpdevelopersclub.com/
 Tags: genesis, genesiswp, widgets, footer widgets
 Requires at least: 3.5
