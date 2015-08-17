@@ -42,7 +42,6 @@ Genesis Simple Footer Widgets allows you to easily go from no footer widgets to 
 = Can I assign widget areas to locations other than the footer? 
 
 	Not right now.
-<<<<<<< HEAD
 
 == Screenshots ==
 
