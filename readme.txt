@@ -1,10 +1,10 @@
 === Genesis Simple Footer Widgets ===
 Contributors: devdesignstampa, hellofromTonya, cpaul007, pmgllc, WPDevelopersClub
 Donate link: http://wpdevelopersclub.com/
-Tags: genesis, genesiswp, widgets, footer widgets
+Tags: genesis, genesiswp, widgets, footer widgets, extra widgets
 Requires at least: 3.5
-Tested up to: 4.2.2
-Stable tag: 1.0.2
+Tested up to: 4.3
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,8 +27,8 @@ Genesis Simple Footer Widgets allows you to easily go from no footer widgets to 
 
 = FTP Installation =
 
-1. Upload `genesis-simple-footer-widgets` to the `/wp-content/plugins/` directory
-2. DO NOT change the name of the genesis-simple-hooks folder
+1. Upload `genesis-variable-footer-widgets` to the `/wp-content/plugins/` directory
+2. DO NOT change the name of the genesis-variable-footer-widgets folder
 3. Activate the plugin through the 'Plugins' menu in WordPress
 
 = How To Use =
@@ -48,6 +48,9 @@ Genesis Simple Footer Widgets allows you to easily go from no footer widgets to 
 See screenshots for to see images of all the Footer Widget Combinations
 
 == Changelog ==
+
+= 1.0.3 =
+* Updated readme.txt and README.md
 
 = 1.0.2 =
 * Changed Plugin name to Genesis Simple Footer Widgets
