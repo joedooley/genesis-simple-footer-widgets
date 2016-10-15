@@ -3,8 +3,8 @@ Contributors: devdesignstampa, hellofromTonya, cpaul007, pmgllc, WPDevelopersClu
 Donate link: http://wpdevelopersclub.com/
 Tags: genesis, genesiswp, widgets, footer widgets, extra widgets
 Requires at least: 3.5
-Tested up to: 4.3
-Stable tag: 1.0.3
+Tested up to: 4.6.1
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,10 @@ This plugin allows you to create multiple footer widgets from a dropdown menu wi
 
 Creating footer widgets can be a nuisance from project to project. Sometimes the original design calls for 4 footer widgets and by default Genesis only has the proper code for 3 footer widgets.
 
-Genesis Simple Footer Widgets allows you to easily go from no footer widgets to 6 footer widgets without having to worry about adding additional CSS or registering new widget areas.  
+Genesis Simple Footer Widgets allows you to easily go from no footer widgets to 6 footer widgets without having to worry about adding additional CSS or registering new widget areas.
+
+
+Special thanks to Cathi Bosco of C&D Studios, http://www.canddstudios.com/, for designing the plugins banner image.
 
 == Installation ==
 
@@ -39,7 +42,7 @@ Genesis Simple Footer Widgets allows you to easily go from no footer widgets to 
 
 == Frequently Asked Questions ==
 
-= Can I assign widget areas to locations other than the footer? 
+= Can I assign widget areas to locations other than the footer?
 
 	Not right now.
 
@@ -49,6 +52,10 @@ See screenshots for to see images of all the Footer Widget Combinations
 
 == Changelog ==
 
+= 1.1 =
+* Added a high-DPI banner designed by Cathi Bosco of http://www.canddstudios.com/
+* Version bump
+
 = 1.0.3 =
 * Updated readme.txt and README.md
 
@@ -56,9 +63,9 @@ See screenshots for to see images of all the Footer Widget Combinations
 * Changed Plugin name to Genesis Simple Footer Widgets
 
 = 1.0.1 =
-* Added CHANGELOG.md 
-* Removed unnecessary files. 
-* Edited readme.txt and README.md 
+* Added CHANGELOG.md
+* Removed unnecessary files.
+* Edited readme.txt and README.md
 * Added instructions within Genesis Theme Settings
 
 = 1.0.0 =
@@ -70,13 +77,13 @@ See screenshots for to see images of all the Footer Widget Combinations
 Added detailed documentation
 
 = 1.0.1 =
-Updated UI 
+Updated UI
 
 = 1.0.0 =
 Initial Release
 
 == Suggestions / Contact Information ==
 
-If anyone has any suggestions or has any feature requests. This plugin works on all Studiopress child themes. 
+If anyone has any suggestions or has any feature requests. This plugin works on all Studiopress child themes.
 
 If you do find any bugs please post them in the support forum.
