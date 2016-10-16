@@ -1,12 +1,12 @@
-<?php namespace JD_Genesis_Simple_Footer_Widgets;
-
+<?php
 /**
  * Plugin Name: Genesis Simple Footer Widgets
- * Plugin URI:  http://www.developingdesigns.com/
- * Description: Easily add up to 6 footer widgets in a simple drop-down menu.
+ * Plugin URI:  https://github.com/joedooley/genesis-simple-footer-widgets
+ * Description: A simple way to change how many footer widgets your site uses. Easily go
+ * from four widgets to three or three to six from a dropdown in Genesis Theme Settings.
  * Author:      Joe Dooley
- * Author URI:  http://www.developingdesigns.com/author/joe-dooley/
- * Version:     1.0.2
+ * Author URI:  http://www.developingdesigns.com/
+ * Version:     1.1
  * Text Domain: genesis-simple-footer-widgets
  * Domain Path: languages
  *
@@ -24,10 +24,12 @@
  * along with Genesis Title Toggle. If not, see <http://www.gnu.org/licenses/>.
  *
  * @package    JD_Genesis_Simple_Footer_Widgets
- * @author     Joe Dooley
- * @since      1.0.2
+ * @author     Joe Dooley <hello@developingdesigns.com>
  * @license    GPL-2.0+
+ * @copyright   2015 Joe Dooley, Developing Designs
  */
+
+namespace JD_Genesis_Simple_Footer_Widgets;
 
 /**
  * If this file is called directly, abort.
@@ -46,7 +48,7 @@ add_action( 'genesis_setup', __NAMESPACE__ . '\\launch', 20 );
  */
 function launch() {
 	$path = plugin_dir_path( __FILE__ );
-	require_once( $path . 'class-plugin.php' );
+	require_once $path . 'class-plugin.php';
 
 	$defaults = array(
 		'views'         => array(

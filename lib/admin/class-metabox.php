@@ -1,15 +1,16 @@
-<?php namespace JD_Genesis_Simple_Footer_Widgets\Admin;
-
+<?php
 /**
  * Genesis Simple Footer Widgets
  *
  * @package     JD_Genesis_Simple_Footer_Widgets
  * @since       1.0.2
- * @author      Joe Dooley
- * @link        http://www.developingdesigns.com/author/joe-dooley/
+ * @author      Joe Dooley <hello@developingdesigns.com>
+ * @link        https://github.com/joedooley/genesis-simple-footer-widgets
  * @license     GNU General Public License 2.0+
- * @copyright   2015 Joe Dooley
+ * @copyright   2015 Joe Dooley, Developing Designs
  */
+
+namespace JD_Genesis_Simple_Footer_Widgets\Admin;
 
 class Metabox {
 
@@ -25,7 +26,6 @@ class Metabox {
 	 * @since 1.0.2
 	 *
 	 * @param array     $config         Configuration parameters
-	 * @return self
 	 */
 	public function __construct( array $config ) {
 		$this->config = $config;
@@ -49,8 +49,6 @@ class Metabox {
 
 	/**
 	 * Register additional metaboxes to Genesis > Theme Settings
-	 * @author Bill Erickson
-	 * @link http://www.billerickson.net/genesis-theme-options/
 	 *
 	 * @param string    $pagehook      $_genesis_theme_settings_pagehook
 	 * @return null
@@ -59,7 +57,10 @@ class Metabox {
 		add_meta_box(
 			'jd-gsfw-settings',
 			'Footer Widgets',
-			array( $this, 'render_metabox' ),
+			[
+				$this,
+				'render_metabox',
+			],
 			$pagehook,
 			'main',
 			'high'
@@ -71,16 +72,14 @@ class Metabox {
 	 *
 	 * @since 1.0.2
 	 *
-	 * @author Bill Erickson
-	 * @link http://www.billerickson.net/genesis-theme-options/
 	 * @return null
 	 */
 	public function render_metabox() {
 		$number_of_widgets = genesis_get_option( 'footer_widgets' );
-		$number_of_widgets = is_numeric( $number_of_widgets ) ? intval( $number_of_widgets ) : 0;
+		$number_of_widgets = is_numeric( $number_of_widgets ) ? (int) $number_of_widgets : 0;
 
 		if ( is_readable( $this->config['views']['metabox'] ) ) {
-			include( $this->config['views']['metabox'] );
+			include $this->config['views']['metabox'];
 		}
 	}
 }

@@ -1,5 +1,4 @@
 1.1
-
 - Added a high-DPI banner designed by Cathi Bosco from 
 http://www.canddstudios.com/
 - Version bump

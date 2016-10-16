@@ -1,22 +1,23 @@
-<?php namespace JD_Genesis_Simple_Footer_Widgets;
-
+<?php
 /**
  * Genesis Simple Footer Widgets
  *
  * @package     JD_Genesis_Simple_Footer_Widgets
  * @since       1.0.2
- * @author      Joe Dooley
- * @link        http://www.developingdesigns.com/author/joe-dooley/
+ * @author      Joe Dooley <hello@developingdesigns.com>
+ * @link        https://github.com/joedooley/genesis-simple-footer-widgets
  * @license     GNU General Public License 2.0+
- * @copyright   2015 Joe Dooley
+ * @copyright   2015 Joe Dooley, Developing Designs
  */
+
+namespace JD_Genesis_Simple_Footer_Widgets;
+
+use JD_Genesis_Simple_Footer_Widgets\Admin\Metabox;
 
 // Oh no you don't. Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) {
 	exit( 'Cheatin&#8217; uh?' );
 }
-
-use JD_Genesis_Simple_Footer_Widgets\Admin\Metabox;
 
 class Genesis_Simple_Footer_Widgets {
 
@@ -32,7 +33,7 @@ class Genesis_Simple_Footer_Widgets {
 	 *
 	 * @var string
 	 */
-	const VERSION = '1.0.2';
+	const VERSION = '1.1';
 
 	/**
 	 * The plugin's minimum WordPress requirement
@@ -90,10 +91,9 @@ class Genesis_Simple_Footer_Widgets {
 	 *
 	 * @since 1.0.2
 	 *
-	 * @param array     $config         Configuration parameters
-	 * @param string    $plugin_dir     Plugin dir
-	 * @param array     $defaults       Default configuration parameters
-	 * @return self
+	 * @param array  $config     Configuration parameters
+	 * @param string $plugin_dir Plugin directory
+	 * @param array  $defaults   Default configuration parameters
 	 */
 	public function __construct( array $config, $plugin_dir, array $defaults ) {
 		$this->init_properties( $config, $plugin_dir, $defaults );
@@ -119,7 +119,7 @@ class Genesis_Simple_Footer_Widgets {
 			$this->plugin_url = str_replace( 'http://', 'https://', $this->plugin_url );
 		}
 
-		$this->number_of_footer_widgets = intval( genesis_get_option( 'footer_widgets' ) );
+		$this->number_of_footer_widgets = (int) genesis_get_option( 'footer_widgets' );
 		$this->number_of_footer_widgets = $this->number_of_footer_widgets > -1 ? $this->number_of_footer_widgets : 3;
 	}
 
@@ -156,7 +156,7 @@ class Genesis_Simple_Footer_Widgets {
 	 * @return null
 	 */
 	public function init_admin() {
-		include( $this->plugin_dir . 'lib/admin/class-metabox.php' );
+		include $this->plugin_dir . 'lib/admin/class-metabox.php';
 
 		$this->metabox = new Metabox( $this->config );
 	}
@@ -183,7 +183,12 @@ class Genesis_Simple_Footer_Widgets {
 	 * @return null
 	 */
 	public function enqueue() {
-		wp_enqueue_style( 'gsfw-stylesheet', $this->plugin_url . 'assets/css/style.css', false, self::VERSION );
+		wp_enqueue_style(
+			'gsfw-stylesheet',
+			$this->plugin_url . 'assets/css/style.css',
+			false,
+			self::VERSION
+		);
 	}
 
 	/**
@@ -193,7 +198,7 @@ class Genesis_Simple_Footer_Widgets {
 	 * @link http://www.billerickson.net/genesis-theme-options/
 	 *
 	 * @param array     $defaults
-	 * @return array                modified defaults
+	 * @return array    modified defaults
 	 */
 	public function set_defaults( $defaults ) {
 		$defaults['footer_widgets'] = '3';
@@ -202,7 +207,7 @@ class Genesis_Simple_Footer_Widgets {
 	}
 
 	/**
-	 * Add attributes
+	 * Add css class attributes
 	 *
 	 * @since 1.0.2
 	 *
@@ -210,7 +215,7 @@ class Genesis_Simple_Footer_Widgets {
 	 * @return array
 	 */
 	public function footer_widgets_attr( $attributes ) {
-		$attributes['class'] .= ' gsfw-footer-widgets-' . genesis_get_option('footer_widgets');
+		$attributes['class'] .= ' gsfw-footer-widgets-' . genesis_get_option( 'footer_widgets' );
 
 		return $attributes;
 	}
@@ -228,9 +233,9 @@ class Genesis_Simple_Footer_Widgets {
 		genesis_add_option_filter(
 			'no_html',
 			GENESIS_SETTINGS_FIELD,
-			array(
+			[
 				'footer_widgets',
-			)
+			]
 		);
 	}
 }
