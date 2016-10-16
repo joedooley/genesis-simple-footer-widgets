@@ -185,7 +185,7 @@ class Genesis_Simple_Footer_Widgets {
 	public function enqueue() {
 		wp_enqueue_style(
 			'gsfw-stylesheet',
-			$this->plugin_url . 'assets/css/style.css',
+			$this->plugin_url . 'assets/css/style.min.css',
 			false,
 			self::VERSION
 		);

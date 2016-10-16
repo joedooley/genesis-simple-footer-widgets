@@ -81,6 +81,8 @@ two rows on tablets and on mobile devices you will have all of your widgets stac
 = 1.1 =
 * Added a high-DPI banner designed by Cathi Bosco of [C&D Studios](http://www.canddstudios.com/)
 * Version bump
+* Code refactoring
+* Minified CSS
 
 = 1.0.3 =
 * Yes, the widgets are fully responsive. For example, if you have 6 widgets selected. You will see 6 widgets in one row on desktop, 3 widgets divided into
@@ -98,13 +100,3 @@ two rows on tablets and on mobile devices you will have all of your widgets stac
 = 1.0.0 =
 * Initial release
 
-== Upgrade Notice ==
-
-= 1.0.2 =
-Added detailed documentation
-
-= 1.0.1 =
-Updated UI
-
-= 1.0.0 =
-Initial Release
