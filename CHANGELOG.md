@@ -1,4 +1,4 @@
-1.2 (2016-10-16)
+1.2 (2016-10-17)
 - Added support for translations via load_plugin_textdomain()
 - Added conditionals to make sure plugin cannot be activated on
   non genesis themes and anyone using PHP 5.3.x
