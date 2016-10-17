@@ -108,7 +108,6 @@ class Genesis_Simple_Footer_Widgets {
 	 * @param array     $config         Configuration parameters
 	 * @param string    $plugin_dir     Plugin dir
 	 * @param array     $defaults       Default configuration parameters
-	 * @return null
 	 */
 	protected function init_properties( array $config, $plugin_dir, array $defaults ) {
 		$this->config = wp_parse_args( $config, $defaults );
@@ -127,8 +126,6 @@ class Genesis_Simple_Footer_Widgets {
 	 * Initialize hooks
 	 *
 	 * @since 1.0.2
-	 *
-	 * @return null
 	 */
 	protected function init_hooks() {
 
@@ -152,8 +149,6 @@ class Genesis_Simple_Footer_Widgets {
 	 * Initialize the Metabox in the admin area
 	 *
 	 * @since 1.0.2
-	 *
-	 * @return null
 	 */
 	public function init_admin() {
 		include $this->plugin_dir . 'lib/admin/class-metabox.php';
@@ -168,8 +163,6 @@ class Genesis_Simple_Footer_Widgets {
 	 * to ensure we are overriding the Child theme's setting for footer widgets
 	 *
 	 * @since 1.0.2
-	 *
-	 * @return null
 	 */
 	public function add_theme_support() {
 		add_theme_support( 'genesis-footer-widgets', $this->number_of_footer_widgets );
@@ -179,13 +172,11 @@ class Genesis_Simple_Footer_Widgets {
 	 * Register the styles
 	 *
 	 * @since 1.0.2
-	 *
-	 * @return null
 	 */
 	public function enqueue() {
 		wp_enqueue_style(
 			'gsfw-stylesheet',
-			$this->plugin_url . 'assets/css/style.min.css',
+			$this->plugin_url . 'css/style.min.css',
 			false,
 			self::VERSION
 		);
